@@ -13,14 +13,14 @@ export default function Hero() {
         </h1>
         
         <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto mb-10">
-          Toma's AI agents handle customer calls, schedule appointments, and manage service requests for HVAC, plumbing, roofing, and more.
+          Fieldwork's AI agents handle customer calls, schedule appointments, and manage service requests for HVAC, plumbing, roofing, and more.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button href="/demo" variant="primary" className="text-lg">
+          <Button href="/contact" variant="primary" className="text-lg">
             Book a Demo
           </Button>
-          <Button href="/see-it-in-action" variant="secondary" className="text-lg">
+          <Button href="/contact" variant="secondary" className="text-lg">
             See It in Action
           </Button>
         </div>

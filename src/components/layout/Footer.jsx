@@ -19,9 +19,9 @@ export default function Footer() {
   };
 
   const socialLinks = [
-    { icon: <FaTwitter />, href: 'https://twitter.com/toma', label: 'Twitter' },
-    { icon: <FaLinkedin />, href: 'https://linkedin.com/company/toma', label: 'LinkedIn' },
-    { icon: <FaFacebook />, href: 'https://facebook.com/toma', label: 'Facebook' },
+    { icon: <FaTwitter />, href: 'https://twitter.com/fieldwork', label: 'Twitter' },
+    { icon: <FaLinkedin />, href: 'https://linkedin.com/company/fieldwork', label: 'LinkedIn' },
+    { icon: <FaFacebook />, href: 'https://facebook.com/fieldwork', label: 'Facebook' },
   ];
 
   return (
@@ -30,7 +30,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="col-span-1">
-            <h3 className="text-2xl font-bold mb-4">Toma</h3>
+            <h3 className="text-2xl font-bold mb-4">Fieldwork</h3>
             <p className="text-gray-600 mb-4">
               AI automation for home services businesses
             </p>
@@ -102,7 +102,7 @@ export default function Footer() {
 
         <div className="mt-8 pt-8 border-t border-gray-200">
           <p className="text-center text-gray-600">
-            © 2024 Toma. All rights reserved.
+            © 2024 Fieldwork. All rights reserved.
           </p>
         </div>
       </div>

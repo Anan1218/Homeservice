@@ -29,7 +29,7 @@ export default function CaseStudy() {
 
           <div className="text-center">
             <a
-              href="/case-study/allseason-home-services"
+              href="/contact"
               className="inline-flex items-center gap-2 text-black hover:text-gray-700 font-medium"
             >
               Read the case study <HiArrowRight />

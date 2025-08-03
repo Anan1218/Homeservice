@@ -8,9 +8,9 @@ export default function FinalCTA() {
           Ready to Automate Your Home Services Business?
         </h2>
         <p className="text-xl mb-8 opacity-90">
-          Join hundreds of HVAC, plumbing, and roofing companies already using Toma to grow their business.
+          Join hundreds of HVAC, plumbing, and roofing companies already using Fieldwork to grow their business.
         </p>
-        <Button href="/demo" variant="white" className="text-lg">
+        <Button href="/contact" variant="white" className="text-lg">
           Book a Demo
         </Button>
       </div>

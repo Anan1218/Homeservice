@@ -102,7 +102,7 @@ function Contact() {
                 Get in Touch
               </h1>
               <p className="text-xl text-gray-600 mb-12">
-                Ready to transform your dealership with AI automation? Let's discuss how Toma can help.
+                Ready to transform your dealership with AI automation? Let's discuss how Fieldwork can help.
               </p>
               
               <form onSubmit={handleSubmit} className="space-y-6">
@@ -225,10 +225,10 @@ function Contact() {
                   <div>
                     <h3 className="font-semibold text-black mb-2">Email</h3>
                     <a 
-                      href="mailto:partners@toma.com" 
+                      href="mailto:partners@fieldwork.com" 
                       className="text-gray-600 hover:text-black transition-colors"
                     >
-                      partners@toma.com
+                      partners@fieldwork.com
                     </a>
                   </div>
                   
@@ -272,7 +272,7 @@ function Contact() {
               {/* Additional CTA */}
               <div className="mt-8 p-6 bg-black text-white rounded-xl">
                 <h3 className="text-xl font-semibold mb-2">
-                  Ready to see Toma in action?
+                  Ready to see Fieldwork in action?
                 </h3>
                 <p className="text-gray-300 mb-4">
                   Schedule a personalized demo to see how our AI can transform your dealership operations.

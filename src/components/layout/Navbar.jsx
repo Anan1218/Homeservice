@@ -16,9 +16,6 @@ export default function Navbar() {
 
   const navLinks = [
     { href: '/contact', label: 'Contact' },
-    { href: '/company', label: 'Company' },
-    { href: '/blog', label: 'Blog' },
-    { href: '/success-stories', label: 'Success Stories' },
   ];
 
   return (
@@ -27,7 +24,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <a href="/" className="flex items-center">
-            <img src="/logo.svg" alt="Toma" className="h-8" />
+            <img src="/logo.svg" alt="Fieldwork" className="h-8" />
           </a>
 
           {/* Desktop Navigation */}
@@ -47,13 +44,13 @@ export default function Navbar() {
             {/* CTA Buttons */}
             <div className="flex items-center gap-4">
               <a
-                href="/demo"
+                href="/contact"
                 className="px-4 py-2 text-white bg-black rounded-md hover:bg-gray-800 transition-colors"
               >
                 Book a Demo
               </a>
               <a
-                href="/login"
+                href="/contact"
                 className="px-4 py-2 text-black border border-gray-300 rounded-md hover:border-gray-400 transition-colors"
               >
                 Dealer Login
@@ -86,13 +83,13 @@ export default function Navbar() {
             ))}
             <div className="pt-4 pb-3 space-y-2">
               <a
-                href="/demo"
+                href="/contact"
                 className="block w-full px-4 py-2 text-center text-white bg-black rounded-md hover:bg-gray-800 transition-colors"
               >
                 Book a Demo
               </a>
               <a
-                href="/login"
+                href="/contact"
                 className="block w-full px-4 py-2 text-center text-black border border-gray-300 rounded-md hover:border-gray-400 transition-colors"
               >
                 Dealer Login
