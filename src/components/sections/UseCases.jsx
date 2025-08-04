@@ -3,32 +3,32 @@ import { HiArrowsPointingOut, HiSpeakerWave, HiPlay, HiChatBubbleLeftEllipsis, H
 export default function UseCases() {
   const benefits = [
     {
-      icon: <HiArrowsPointingOut className="w-8 h-8 text-blue-600" />,
+      icon: <HiArrowsPointingOut className="w-8 h-8 text-blue-600 opacity-70" />,
       title: 'True End-to-End Automation',
       description: 'Automate tasks completely, reducing reliance on frequent human intervention.'
     },
     {
-      icon: <HiSpeakerWave className="w-8 h-8 text-orange-500" />,
+      icon: <HiSpeakerWave className="w-8 h-8 text-orange-500 opacity-70" />,
       title: 'Natural & Fast Conversations',
       description: 'Fine-tuned AI provides more natural interactions and the lowest response latency.'
     },
     {
-      icon: <HiPlay className="w-8 h-8 text-yellow-500" />,
+      icon: <HiPlay className="w-8 h-8 text-yellow-500 opacity-70" />,
       title: 'Omnichannel Communications',
       description: 'Automate voice and SMS interactions, unlike single-channel competitor offerings.'
     },
     {
-      icon: <HiChatBubbleLeftEllipsis className="w-8 h-8 text-red-500" />,
+      icon: <HiChatBubbleLeftEllipsis className="w-8 h-8 text-red-500 opacity-70" />,
       title: '1-Hour Support Included',
       description: 'Rest assured you can roll out new technology with our dedicated support team.'
     },
     {
-      icon: <HiRocketLaunch className="w-8 h-8 text-blue-500" />,
+      icon: <HiRocketLaunch className="w-8 h-8 text-blue-500 opacity-70" />,
       title: 'Onboard With Ease',
       description: 'Deploy quickly with minimal training, without disrupting your home service business\'s daily operations.'
     },
     {
-      icon: <HiCog6Tooth className="w-8 h-8 text-pink-500" />,
+      icon: <HiCog6Tooth className="w-8 h-8 text-pink-500 opacity-70" />,
       title: 'In-House AI Advantage',
       description: 'Our proprietary AI allows deeper customization compared to other products.'
     }

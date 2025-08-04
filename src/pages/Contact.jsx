@@ -276,7 +276,7 @@ function Contact() {
                   Schedule a personalized demo to see how our AI can transform your home service operations.
                 </p>
                 <a
-                  href="/demo"
+                  href="/contact"
                   className="inline-block px-6 py-2 bg-white text-black rounded-md hover:bg-gray-100 transition-colors font-medium"
                 >
                   Book a Demo

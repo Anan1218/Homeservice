@@ -92,7 +92,7 @@ export default function UseCasesIntro() {
         </div>
 
         {/* Interactive Display Section */}
-        <div className="grid lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
+        <div key={activeUseCase} className="grid lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto animate-fadeIn">
           {/* Left side - Dynamic Mockup */}
           <div className="flex justify-center">
             <div className="bg-gray-900 rounded-2xl w-full max-w-md h-auto min-h-[400px] sm:aspect-square sm:max-w-lg md:max-w-[30rem] flex items-center justify-center p-3 sm:p-4 md:p-6 lg:p-8">

@@ -11,7 +11,7 @@ export default function MediaMentions() {
             <img 
               src="/images/media/business-insider.png" 
               alt="Business Insider"
-              className="h-12 w-auto"
+              className="h-6 w-auto"
             />
           </div>
         </div>
