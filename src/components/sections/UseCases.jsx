@@ -25,7 +25,7 @@ export default function UseCases() {
     {
       icon: <HiRocketLaunch className="w-8 h-8 text-blue-500 opacity-70" />,
       title: 'Onboard With Ease',
-      description: 'Deploy quickly with minimal training, without disrupting your home service business\'s daily operations.'
+      description: 'Deploy quickly with minimal training, without disrupting your commercial and home service business\'s daily operations.'
     },
     {
       icon: <HiCog6Tooth className="w-8 h-8 text-pink-500 opacity-70" />,
@@ -41,7 +41,7 @@ export default function UseCases() {
           <p className="text-sm text-gray-500 uppercase tracking-wide mb-2">Why Fieldwork?</p>
           <h2 className="text-4xl lg:text-5xl font-serif mb-6">There's No Competition</h2>
           <p className="text-lg text-gray-600 max-w-4xl mx-auto">
-            Built for home service companies that refuse to settle, Fieldwork's AI outperforms the rest—smarter, faster, and more reliable than any alternative.
+            Built for commercial and home service companies that refuse to settle, Fieldwork's AI outperforms the rest—smarter, faster, and more reliable than any alternative.
           </p>
         </div>
         

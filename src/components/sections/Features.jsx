@@ -5,7 +5,7 @@ export default function Features() {
     {
       icon: <HiChatBubbleLeftRight className="w-8 h-8" />,
       title: 'Automated Customer Communications',
-      description: 'Handle emergency calls, service requests, and quotes 24/7 with AI that understands home service urgency.'
+      description: 'Handle emergency calls, service requests, and quotes 24/7 with AI that understands commercial and home service urgency.'
     },
     {
       icon: <HiCalendarDays className="w-8 h-8" />,

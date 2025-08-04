@@ -44,7 +44,7 @@ export default function UseCasesIntro() {
       label: 'Custom Workflows',
       title: 'Custom Workflows',
       heading: 'Build Your Own',
-      description: 'Create custom automation workflows tailored to your specific home service business needs, from lead qualification to warranty follow-ups.',
+      description: 'Create custom automation workflows tailored to your specific commercial and home service business needs, from lead qualification to warranty follow-ups.',
       colors: {
         active: 'bg-purple-50 border-purple-300 text-purple-700',
         hover: 'hover:bg-purple-25 hover:border-purple-200'
@@ -59,7 +59,7 @@ export default function UseCasesIntro() {
           <p className="text-sm text-gray-500 uppercase tracking-wide mb-2">Use Cases</p>
           <h2 className="text-4xl lg:text-5xl font-serif mb-6">Automation That Drives Revenue</h2>
           <p className="text-lg text-gray-600 max-w-4xl mx-auto mb-8">
-            Make AI work for you by automating repetitive tasks that your home service business encounters every single day.
+            Make AI work for you by automating repetitive tasks that your commercial and home service business encounters every single day.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-3 justify-center items-center mb-12">

@@ -32,7 +32,7 @@ export default function Footer() {
           <div className="col-span-1">
             <h3 className="text-2xl font-bold mb-4">Fieldwork</h3>
             <p className="text-gray-600 mb-4">
-              AI automation for home services businesses
+              AI automation for commercial and home services businesses
             </p>
             <div className="flex gap-4">
               {socialLinks.map((social) => (

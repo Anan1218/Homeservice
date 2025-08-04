@@ -7,7 +7,7 @@ export default function Benefits() {
     'Multi-channel support (calls, texts, web)',
     'Instant response for emergencies',
     'Easy setup with existing tools',
-    'Built specifically for home services'
+    'Built specifically for commercial and home services'
   ];
 
   return (
