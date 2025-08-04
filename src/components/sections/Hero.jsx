@@ -22,7 +22,7 @@ export default function Hero() {
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 text-center">
         <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-normal mb-4 max-w-6xl mx-auto leading-tight">
-          Transform Your Home Services Business with AI-Powered Automation
+          Transform Your Commercial and Home Services Business with AI
         </h1>
         
         <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto mb-8">
