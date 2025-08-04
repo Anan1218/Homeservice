@@ -16,11 +16,11 @@ export default function Hero() {
           Fieldwork's AI agents handle customer calls, schedule appointments, and manage service requests for HVAC, plumbing, roofing, and more.
         </p>
         
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button href="/contact" variant="primary" className="text-lg">
+        <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
+          <Button href="/contact" variant="primary" className="text-base px-6 py-2.5">
             Book a Demo
           </Button>
-          <Button href="/contact" variant="secondary" className="text-lg">
+          <Button href="/contact" variant="secondary" className="text-base px-6 py-2.5">
             See It in Action
           </Button>
         </div>

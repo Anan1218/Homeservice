@@ -93,7 +93,7 @@ export default function LiveCalls() {
             {duplicatedCalls.map((call, index) => (
               <div
                 key={`${call.id}-${index}`}
-                className="flex-shrink-0 bg-white border border-gray-200 rounded-lg p-5 w-96 md:w-[420px] shadow-sm hover:shadow-md transition-shadow"
+                className="flex-shrink-0 bg-white border border-gray-200 rounded-lg p-5 w-80 sm:w-96 md:w-[420px] shadow-sm hover:shadow-md transition-shadow"
               >
                 <div className="flex items-start gap-4">
                   {/* Phone icon with status */}
