@@ -1,35 +1,41 @@
 export default function SocialProof() {
-  const companies = [
-    { name: "Johnson's HVAC Services", logo: '/images/dealerships/johnsons-hvac.svg' },
-    { name: 'ProPlumb Solutions', logo: '/images/dealerships/proplumb-solutions.svg' },
-    { name: 'Summit Roofing Co.', logo: '/images/dealerships/summit-roofing.svg' },
-    { name: 'AllSeason Home Services', logo: '/images/dealerships/allseason-home.svg' },
+  const softwareIntegrations = [
+    { name: 'ServiceTitan', logo: '/images/software/servicetitan.png' },
+    { name: 'Housecall Pro', logo: '/images/software/housecallpro.png' },
+    { name: 'Jobber', logo: '/images/software/jobber.png' },
+    { name: 'FieldEdge', logo: '/images/software/fieldedge.png' },
   ];
 
-  // For demo purposes, we'll repeat the pattern
-  const allCompanies = [...companies, ...companies, ...companies];
-
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-white border-t border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <p className="text-center text-gray-600 mb-8 text-sm uppercase tracking-wide">
-          Trusted by Home Service Companies
-        </p>
+        <h2 className="text-center text-2xl font-medium mb-12">
+          Integrates with Your Home Service Software
+        </h2>
         
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 items-center">
-          {allCompanies.map((company, index) => (
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center mb-12">
+          {softwareIntegrations.map((software, index) => (
             <div
               key={index}
-              className="flex items-center justify-center p-4 grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all"
+              className="flex items-center justify-center w-[120px] h-[45px] md:w-[160px] md:h-[60px] opacity-80 hover:opacity-100 transition-all"
             >
               <img 
-                src={company.logo} 
-                alt={company.name}
-                className="h-12 w-auto"
+                src={software.logo} 
+                alt={software.name}
+                className={`max-h-full max-w-full object-contain ${
+                  software.name === 'FieldEdge' ? 'scale-90' : ''
+                }`}
               />
             </div>
           ))}
         </div>
+        
+        <p className="text-center text-gray-600 text-sm">
+          Don't see your software? Fieldwork Operator navigates any vendor's website like a human.{' '}
+          <a href="/contact" className="text-blue-600 hover:underline">
+            Learn more →
+          </a>
+        </p>
       </div>
     </section>
   );

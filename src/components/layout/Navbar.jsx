@@ -49,12 +49,6 @@ export default function Navbar() {
               >
                 Book a Demo
               </a>
-              <a
-                href="/contact"
-                className="px-4 py-2 text-black border border-gray-300 rounded-md hover:border-gray-400 transition-colors"
-              >
-                Dealer Login
-              </a>
             </div>
           </div>
 
@@ -87,12 +81,6 @@ export default function Navbar() {
                 className="block w-full px-4 py-2 text-center text-white bg-black rounded-md hover:bg-gray-800 transition-colors"
               >
                 Book a Demo
-              </a>
-              <a
-                href="/contact"
-                className="block w-full px-4 py-2 text-center text-black border border-gray-300 rounded-md hover:border-gray-400 transition-colors"
-              >
-                Dealer Login
               </a>
             </div>
           </div>

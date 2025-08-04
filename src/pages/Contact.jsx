@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { FaTwitter, FaLinkedin, FaYoutube } from 'react-icons/fa';
-import AnnouncementBar from '../components/layout/AnnouncementBar';
 import Navbar from '../components/layout/Navbar';
 import Footer from '../components/layout/Footer';
 
@@ -90,7 +89,6 @@ function Contact() {
 
   return (
     <div className="min-h-screen bg-white">
-      <AnnouncementBar />
       <Navbar />
       
       <main className="pt-20 pb-24">
