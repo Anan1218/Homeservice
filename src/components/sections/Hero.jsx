@@ -2,9 +2,22 @@ import Button from '../common/Button';
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[400px] lg:min-h-[500px] flex items-center justify-center overflow-hidden bg-white">
+    <section className="relative min-h-[400px] lg:min-h-[500px] flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-50/50 via-white to-blue-50/20">
+      {/* Gradient Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-tr from-blue-100/20 via-transparent to-purple-100/20" />
+      
       {/* Animated Grid Background */}
-      <div className="retro-grid opacity-30" />
+      <div className="retro-grid opacity-40" />
+      
+      {/* Floating Elements */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute top-20 left-10 w-48 h-48 bg-blue-300/15 rounded-full blur-3xl animate-float" />
+        <div className="absolute bottom-20 right-10 w-56 h-56 bg-purple-300/15 rounded-full blur-3xl animate-float-delayed" />
+        <div className="absolute top-1/2 left-1/3 w-36 h-36 bg-teal-300/15 rounded-full blur-3xl animate-float-slow" />
+        <div className="absolute bottom-1/3 right-1/4 w-40 h-40 bg-orange-200/10 rounded-full blur-3xl animate-float" />
+        <div className="absolute top-1/3 right-1/3 w-32 h-32 bg-pink-200/10 rounded-full blur-3xl animate-float-delayed" />
+      </div>
+      
       
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 text-center">

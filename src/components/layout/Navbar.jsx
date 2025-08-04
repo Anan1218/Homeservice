@@ -64,7 +64,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden border-t border-gray-200">
+        <div className="absolute top-16 left-0 right-0 md:hidden bg-white border-t border-gray-200 shadow-lg z-40">
           <div className="px-4 py-2 space-y-1">
             {navLinks.map((link) => (
               <a

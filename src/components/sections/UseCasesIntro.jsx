@@ -72,7 +72,7 @@ export default function UseCasesIntro() {
           </div>
         </div>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:flex lg:flex-row gap-3 mb-16 max-w-2xl mx-auto lg:max-w-none">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:flex lg:flex-row gap-3 mb-16 max-w-2xl mx-auto lg:max-w-none lg:justify-center">
           {useCases.map((useCase, index) => (
             <button
               key={index}
@@ -92,102 +92,101 @@ export default function UseCasesIntro() {
         </div>
 
         {/* Interactive Display Section */}
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
           {/* Left side - Dynamic Mockup */}
           <div className="flex justify-center">
-            <div className="bg-gray-900 rounded-2xl w-80 h-80 sm:w-96 sm:h-96 md:w-[30rem] md:h-[30rem] flex items-center justify-center p-4">
+            <div className="bg-gray-900 rounded-2xl w-full max-w-md h-auto min-h-[400px] sm:aspect-square sm:max-w-lg md:max-w-[30rem] flex items-center justify-center p-3 sm:p-4 md:p-6 lg:p-8">
             {activeUseCase === 0 ? (
               // Receptionist - Phone Call Interface
-              <div className="bg-white rounded-xl p-4 sm:p-6 w-full max-w-[280px] sm:max-w-sm h-full overflow-hidden">
-                <div className="text-center mb-4">
-                  <div className="w-16 h-16 bg-teal-100 rounded-full mx-auto mb-4 flex items-center justify-center text-teal-600 text-2xl">
+              <div className="bg-white rounded-xl p-3 sm:p-4 md:p-6 w-full h-full flex flex-col justify-center">
+                <div className="text-center mb-3 sm:mb-4">
+                  <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-teal-100 rounded-full mx-auto mb-2 sm:mb-3 flex items-center justify-center text-teal-600 text-lg sm:text-xl md:text-2xl">
                     📞
                   </div>
-                  <div className="text-lg font-semibold text-gray-900 mb-1">Incoming Call</div>
-                  <div className="text-sm text-gray-500">00:23</div>
+                  <div className="text-base sm:text-lg font-semibold text-gray-900">Incoming Call</div>
+                  <div className="text-xs sm:text-sm text-gray-500">00:23</div>
                 </div>
                 
-                <div className="space-y-3">
-                  <div className="bg-gray-50 rounded-lg p-4">
-                    <div className="font-medium text-gray-900 mb-1">Sarah Martinez</div>
-                    <div className="text-sm text-gray-600 mb-1">(555) 123-4567</div>
+                <div className="space-y-2 sm:space-y-3">
+                  <div className="bg-gray-50 rounded-lg p-3 sm:p-4">
+                    <div className="font-medium text-gray-900 text-sm sm:text-base">Sarah Martinez</div>
+                    <div className="text-xs sm:text-sm text-gray-600">(555) 123-4567</div>
                     <div className="text-xs text-gray-500">AC Repair - Returning Customer</div>
                   </div>
                   
-                  <div className="space-y-3">
-                    <div className="bg-teal-25 border border-teal-100 rounded-lg p-3">
-                      <div className="text-sm font-medium text-teal-700 mb-1">AI Response Ready</div>
+                  <div className="space-y-2 sm:space-y-3">
+                    <div className="bg-teal-25 border border-teal-100 rounded-lg p-2 sm:p-3">
+                      <div className="text-xs sm:text-sm font-medium text-teal-700">AI Response Ready</div>
                       <div className="text-xs text-teal-600">Checking availability...</div>
                     </div>
-                    
                   </div>
                 </div>
               </div>
             ) : activeUseCase === 1 ? (
               // Reminders - Reminder Dashboard
-              <div className="bg-white rounded-xl p-4 sm:p-6 w-full max-w-[280px] sm:max-w-sm h-full overflow-hidden">
-                <div className="text-center mb-4">
-                  <div className="w-16 h-16 bg-blue-100 rounded-full mx-auto mb-4 flex items-center justify-center text-blue-600 text-2xl">
+              <div className="bg-white rounded-xl p-3 sm:p-4 md:p-6 w-full h-full flex flex-col justify-center">
+                <div className="text-center mb-3 sm:mb-4">
+                  <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-blue-100 rounded-full mx-auto mb-2 sm:mb-3 flex items-center justify-center text-blue-600 text-lg sm:text-xl md:text-2xl">
                     🔔
                   </div>
-                  <div className="text-lg font-semibold text-gray-900 mb-1">Today's Reminders</div>
-                  <div className="text-sm text-gray-500">Mar 15</div>
+                  <div className="text-base sm:text-lg font-semibold text-gray-900">Today's Reminders</div>
+                  <div className="text-xs sm:text-sm text-gray-500">Mar 15</div>
                 </div>
                 
-                <div className="space-y-3">
-                  <div className="bg-blue-25 border border-blue-100 rounded-lg p-3">
+                <div className="space-y-2 sm:space-y-3">
+                  <div className="bg-blue-25 border border-blue-100 rounded-lg p-2 sm:p-3">
                     <div className="flex items-center justify-between mb-1">
-                      <div className="text-sm font-medium text-blue-700">Mike Chen</div>
+                      <div className="text-xs sm:text-sm font-medium text-blue-700">Mike Chen</div>
                       <div className="text-xs text-blue-600">2:00 PM</div>
                     </div>
-                    <div className="text-xs text-blue-600 mb-1">HVAC Maintenance</div>
-                    <div className="flex items-center gap-1">
-                      <div className="w-1.5 h-1.5 bg-blue-400 rounded-full"></div>
-                      <div className="text-xs text-blue-600 font-medium">SMS Sent</div>
+                    <div className="text-xs text-blue-600">HVAC Maintenance</div>
+                    <div className="flex items-center gap-1 mt-1">
+                      <div className="w-1 h-1 sm:w-1.5 sm:h-1.5 bg-blue-400 rounded-full"></div>
+                      <div className="text-xs text-blue-600">SMS Sent</div>
                     </div>
                   </div>
                   
-                  <div className="bg-blue-25 border border-blue-100 rounded-lg p-3">
+                  <div className="bg-blue-25 border border-blue-100 rounded-lg p-2 sm:p-3">
                     <div className="flex items-center justify-between mb-1">
-                      <div className="text-sm font-medium text-blue-700">Lisa Park</div>
+                      <div className="text-xs sm:text-sm font-medium text-blue-700">Lisa Park</div>
                       <div className="text-xs text-blue-600">4:30 PM</div>
                     </div>
-                    <div className="text-xs text-blue-600 mb-1">Plumbing Repair</div>
-                    <div className="flex items-center gap-1">
-                      <div className="w-1.5 h-1.5 bg-blue-400 rounded-full animate-pulse"></div>
-                      <div className="text-xs text-blue-600 font-medium">Calling...</div>
+                    <div className="text-xs text-blue-600">Plumbing Repair</div>
+                    <div className="flex items-center gap-1 mt-1">
+                      <div className="w-1 h-1 sm:w-1.5 sm:h-1.5 bg-blue-400 rounded-full animate-pulse"></div>
+                      <div className="text-xs text-blue-600">Calling...</div>
                     </div>
                   </div>
                 </div>
               </div>
             ) : activeUseCase === 2 ? (
               // Service Appointments - Appointment Scheduler
-              <div className="bg-white rounded-xl p-4 sm:p-6 w-full max-w-[280px] sm:max-w-sm h-full overflow-hidden">
-                <div className="text-center mb-4">
-                  <div className="w-16 h-16 bg-orange-100 rounded-full mx-auto mb-4 flex items-center justify-center text-orange-600 text-2xl">
+              <div className="bg-white rounded-xl p-3 sm:p-4 md:p-6 w-full h-full flex flex-col justify-center">
+                <div className="text-center mb-3 sm:mb-4">
+                  <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-orange-100 rounded-full mx-auto mb-2 sm:mb-3 flex items-center justify-center text-orange-600 text-lg sm:text-xl md:text-2xl">
                     📅
                   </div>
-                  <div className="text-lg font-semibold text-gray-900 mb-1">Schedule Appointment</div>
-                  <div className="text-sm text-gray-500">Available Today</div>
+                  <div className="text-base sm:text-lg font-semibold text-gray-900">Schedule Appointment</div>
+                  <div className="text-xs sm:text-sm text-gray-500">Available Today</div>
                 </div>
                 
                 <div className="space-y-2">
-                  <div className="bg-gray-50 rounded-lg p-3">
-                    <div className="font-medium text-gray-900 text-sm">James Wilson</div>
+                  <div className="bg-gray-50 rounded-lg p-2 sm:p-3">
+                    <div className="font-medium text-gray-900 text-xs sm:text-sm">James Wilson</div>
                     <div className="text-xs text-gray-600">"Can I reschedule my appointment?"</div>
                     <div className="text-xs text-gray-500">Water Heater Repair</div>
                   </div>
-                  <div className="space-y-3">
-                    <div className="bg-orange-25 border border-orange-100 rounded-lg p-3">
-                      <div className="text-sm font-medium text-orange-700 mb-1">Available Slots</div>
+                  <div className="space-y-2 sm:space-y-3">
+                    <div className="bg-orange-25 border border-orange-100 rounded-lg p-2 sm:p-3">
+                      <div className="text-xs sm:text-sm font-medium text-orange-700">Available Slots</div>
                       <div className="text-xs text-orange-600">Checking calendar...</div>
                     </div>
                     
-                    <div className="grid grid-cols-2 gap-2">
-                      <button className="bg-orange-200 text-orange-800 text-sm py-2 rounded-lg font-medium">
+                    <div className="grid grid-cols-2 gap-1 sm:gap-2">
+                      <button className="bg-orange-200 text-orange-800 text-xs sm:text-sm py-1.5 sm:py-2 rounded-lg font-medium">
                         2:00 PM
                       </button>
-                      <button className="bg-gray-200 text-gray-700 text-sm py-2 rounded-lg font-medium">
+                      <button className="bg-gray-200 text-gray-700 text-xs sm:text-sm py-1.5 sm:py-2 rounded-lg font-medium">
                         4:30 PM
                       </button>
                     </div>
@@ -196,40 +195,40 @@ export default function UseCasesIntro() {
               </div>
             ) : activeUseCase === 3 ? (
               // Custom Workflows - Workflow Builder Interface
-              <div className="bg-white rounded-xl p-4 sm:p-6 w-full max-w-[280px] sm:max-w-sm h-full overflow-hidden">
-                <div className="text-center mb-4">
-                  <div className="w-16 h-16 bg-purple-100 rounded-full mx-auto mb-4 flex items-center justify-center text-purple-600 text-2xl">
+              <div className="bg-white rounded-xl p-3 sm:p-4 md:p-6 w-full h-full flex flex-col justify-center">
+                <div className="text-center mb-3 sm:mb-4">
+                  <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-purple-100 rounded-full mx-auto mb-2 sm:mb-3 flex items-center justify-center text-purple-600 text-lg sm:text-xl md:text-2xl">
                     🔧
                   </div>
-                  <div className="text-lg font-semibold text-gray-900 mb-1">Build Workflow</div>
-                  <div className="text-sm text-gray-500">Parts Request</div>
+                  <div className="text-base sm:text-lg font-semibold text-gray-900">Build Workflow</div>
+                  <div className="text-xs sm:text-sm text-gray-500">Parts Request</div>
                 </div>
                 
-                <div className="space-y-3">
+                <div className="space-y-2 sm:space-y-3">
                   {/* Customer message */}
-                  <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 bg-gray-300 rounded-full flex items-center justify-center text-gray-600 text-xs font-medium">
+                  <div className="flex items-start gap-2 sm:gap-3">
+                    <div className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 bg-gray-300 rounded-full flex items-center justify-center text-gray-600 text-xs font-medium shrink-0">
                       C
                     </div>
                     <div className="flex-1">
-                      <div className="bg-gray-100 rounded-lg p-3">
-                        <div className="text-sm text-gray-800">Do you guys have a <span className="font-medium">[Parts Request]</span>?</div>
+                      <div className="bg-gray-100 rounded-lg p-2 sm:p-3">
+                        <div className="text-xs sm:text-sm text-gray-800">Do you guys have a <span className="font-medium">[Parts Request]</span>?</div>
                       </div>
                     </div>
                   </div>
                   
                   {/* Connection line */}
-                  <div className="ml-4 w-px h-3 bg-gray-300"></div>
+                  <div className="ml-3 sm:ml-3.5 md:ml-4 w-px h-2 sm:h-3 bg-gray-300"></div>
                   
                   {/* Automation action */}
-                  <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 bg-purple-200 rounded-full flex items-center justify-center text-purple-700 text-xs">
+                  <div className="flex items-start gap-2 sm:gap-3">
+                    <div className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 bg-purple-200 rounded-full flex items-center justify-center text-purple-700 text-xs shrink-0">
                       ✉
                     </div>
                     <div className="flex-1">
-                      <div className="bg-purple-25 border border-purple-100 rounded-lg p-3">
-                        <div className="text-sm font-medium text-purple-700 mb-1">Send Email to</div>
-                        <div className="text-sm text-purple-600">Parts Manager</div>
+                      <div className="bg-purple-25 border border-purple-100 rounded-lg p-2 sm:p-3">
+                        <div className="text-xs sm:text-sm font-medium text-purple-700">Send Email to</div>
+                        <div className="text-xs sm:text-sm text-purple-600">Parts Manager</div>
                       </div>
                     </div>
                   </div>
