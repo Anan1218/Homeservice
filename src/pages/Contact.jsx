@@ -100,7 +100,7 @@ function Contact() {
                 Get in Touch
               </h1>
               <p className="text-xl text-gray-600 mb-12">
-                Ready to transform your dealership with AI automation? Let's discuss how Fieldwork can help.
+                Ready to transform your home services business with AI automation? Let's discuss how Fieldwork can help.
               </p>
               
               <form onSubmit={handleSubmit} className="space-y-6">
@@ -139,7 +139,7 @@ function Contact() {
                     className={`w-full px-4 py-3 border rounded-md focus:ring-2 focus:ring-black focus:border-black transition-colors ${
                       errors.email ? 'border-red-500' : 'border-gray-300'
                     }`}
-                    placeholder="john@dealership.com"
+                    placeholder="john@hvaccompany.com"
                   />
                   {errors.email && (
                     <p className="mt-1 text-sm text-red-500">{errors.email}</p>
@@ -160,7 +160,7 @@ function Contact() {
                     className={`w-full px-4 py-3 border rounded-md focus:ring-2 focus:ring-black focus:border-black transition-colors ${
                       errors.company ? 'border-red-500' : 'border-gray-300'
                     }`}
-                    placeholder="ABC Motors"
+                    placeholder="Premier HVAC Services"
                   />
                   {errors.company && (
                     <p className="mt-1 text-sm text-red-500">{errors.company}</p>
@@ -181,7 +181,7 @@ function Contact() {
                     className={`w-full px-4 py-3 border rounded-md focus:ring-2 focus:ring-black focus:border-black transition-colors resize-none ${
                       errors.message ? 'border-red-500' : 'border-gray-300'
                     }`}
-                    placeholder="Tell us about your dealership's needs..."
+                    placeholder="Tell us about your home service business needs..."
                   />
                   {errors.message && (
                     <p className="mt-1 text-sm text-red-500">{errors.message}</p>
@@ -273,7 +273,7 @@ function Contact() {
                   Ready to see Fieldwork in action?
                 </h3>
                 <p className="text-gray-300 mb-4">
-                  Schedule a personalized demo to see how our AI can transform your dealership operations.
+                  Schedule a personalized demo to see how our AI can transform your home service operations.
                 </p>
                 <a
                   href="/demo"
