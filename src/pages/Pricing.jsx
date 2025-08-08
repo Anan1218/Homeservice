@@ -43,16 +43,18 @@ const Pricing = () => {
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8 mb-16">
           {/* Pay as you go Card */}
           <div className="bg-white rounded-xl border border-gray-200 p-8 shadow-sm">
-            <div className="mb-6">
+            <div className="mb-6 h-32">
               <h3 className="text-3xl font-semibold text-gray-900 mb-2">Pay as you go</h3>
               <p className="text-gray-600 mb-1">$49 to start.</p>
               <p className="text-gray-600 mb-1">Self-Serve</p>
               <p className="text-gray-600">Start instantly.</p>
             </div>
 
-            <button className="w-full border-2 border-gray-900 text-gray-900 py-3 px-6 rounded-full font-medium hover:bg-gray-50 transition-colors mb-8">
-              Sign up - for free
-            </button>
+            <div className="mb-8">
+              <Button href="/contact" variant="primary" className="w-full">
+                Sign up - for free
+              </Button>
+            </div>
 
             <div className="mb-8">
               <h4 className="text-sm font-medium text-gray-500 uppercase tracking-wider mb-4">DETAILS</h4>
@@ -82,14 +84,16 @@ const Pricing = () => {
 
           {/* Enterprise Plan Card */}
           <div className="bg-white rounded-xl border border-gray-200 p-8 shadow-sm">
-            <div className="mb-6">
+            <div className="mb-6 h-32">
               <h3 className="text-3xl font-semibold text-gray-900 mb-2">Enterprise Plan</h3>
               <p className="text-gray-600 mb-1">For companies with large call volumes (over $1k/month)</p>
             </div>
 
-            <button className="w-full border-2 border-gray-900 text-gray-900 py-3 px-6 rounded-full font-medium hover:bg-gray-50 transition-colors mb-8">
-              Contact Sales
-            </button>
+            <div className="mb-8">
+              <Button href="/contact" variant="secondary" className="w-full">
+                Contact Sales
+              </Button>
+            </div>
 
             <div className="mb-8">
               <h4 className="text-sm font-medium text-gray-500 uppercase tracking-wider mb-4">DETAILS</h4>
