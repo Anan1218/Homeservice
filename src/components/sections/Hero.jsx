@@ -30,10 +30,10 @@ export default function Hero() {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
-          <Button href="/contact" variant="primary" className="text-base px-6 py-2.5">
+          <Button href="/contact" variant="primary" className="text-base px-6 py-2.5 w-48">
             Book a Demo
           </Button>
-          <Button href="/contact" variant="secondary" className="text-base px-6 py-2.5">
+          <Button href="/contact" variant="secondary" className="text-base px-6 py-2.5 w-48">
             See It in Action
           </Button>
         </div>

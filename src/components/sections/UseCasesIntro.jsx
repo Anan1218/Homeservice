@@ -63,10 +63,10 @@ export default function UseCasesIntro() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-3 justify-center items-center mb-12">
-            <Button href="/contact" variant="primary" className="text-base px-6 py-2.5">
+            <Button href="/contact" variant="primary" className="text-base px-6 py-2.5 w-52">
               Talk to Crewmate
             </Button>
-            <Button href="/contact" variant="secondary" className="text-base px-6 py-2.5">
+            <Button href="/contact" variant="secondary" className="text-base px-6 py-2.5 w-52">
               Get Started →
             </Button>
           </div>
