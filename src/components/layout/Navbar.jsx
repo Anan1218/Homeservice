@@ -15,6 +15,7 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
+    { href: '/pricing', label: 'Pricing' },
     { href: '/contact', label: 'Contact' },
   ];
 
