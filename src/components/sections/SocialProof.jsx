@@ -31,7 +31,7 @@ export default function SocialProof() {
         </div>
         
         <p className="text-center text-gray-600 text-sm">
-          Don't see your software? Fieldwork Operator navigates any vendor's website like a human.{' '}
+          Don't see your software? Crewmate Operator navigates any vendor's website like a human.{' '}
           <a href="/contact" className="text-blue-600 hover:underline">
             Learn more →
           </a>

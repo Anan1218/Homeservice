@@ -13,7 +13,7 @@ export default function Benefits() {
   return (
     <section className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-semibold text-center mb-12">Why Choose Fieldwork</h2>
+        <h2 className="text-3xl font-semibold text-center mb-12">Why Choose Crewmate</h2>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
           {benefits.map((benefit, index) => (

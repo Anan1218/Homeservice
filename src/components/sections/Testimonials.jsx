@@ -4,7 +4,7 @@ import { HiChevronLeft, HiChevronRight } from 'react-icons/hi';
 export default function Testimonials() {
   const testimonials = [
     {
-      quote: "Fieldwork handles our after-hours emergencies perfectly. It's like having a dispatcher who never sleeps.",
+      quote: "Crewmate handles our after-hours emergencies perfectly. It's like having a dispatcher who never sleeps.",
       author: "Mike Thompson",
       title: "Owner at Thompson's HVAC & Plumbing",
       image: "/images/testimonials/mike-thompson.svg"

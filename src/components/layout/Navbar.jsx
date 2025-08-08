@@ -24,7 +24,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <a href="/" className="flex items-center">
-            <img src="/logo.svg" alt="Fieldwork" className="h-8" />
+            <img src="/logo.svg" alt="Crewmate" className="h-8" />
           </a>
 
           {/* Desktop Navigation */}

@@ -26,7 +26,7 @@ export default function Hero() {
         </h1>
         
         <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-          Fieldwork's AI agents handle customer calls, schedule appointments, and manage service requests for HVAC, plumbing, roofing, and more.
+          Crewmate's AI agents handle customer calls, schedule appointments, and manage service requests for HVAC, plumbing, roofing, and more.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
