@@ -3,183 +3,180 @@ import Navbar from '../components/layout/Navbar';
 import Footer from '../components/layout/Footer';
 import PricingSlider from '../components/common/PricingSlider';
 import Button from '../components/common/Button';
-import { calculatePrice, formatPrice, getPricingTier, getTierFeatures } from '../utils/pricingCalculator';
+import { 
+  getBasePlanPrice,
+  calculateUsageCharges,
+  calculateTotalPrice,
+  formatPrice,
+  getPayAsYouGoDetails,
+  getPayAsYouGoIncluded,
+  getEnterpriseFeatures
+} from '../utils/pricingCalculator';
 
 const Pricing = () => {
-  const [calls, setCalls] = useState(250);
-  const [texts, setTexts] = useState(500);
+  const [minutes, setMinutes] = useState(1500);
+  const [smsCredits, setSmsCredits] = useState(150);
 
-  const totalPrice = calculatePrice(calls, texts);
-  const currentTier = getPricingTier(totalPrice);
-  const tierFeatures = getTierFeatures(currentTier);
+  const basePrice = getBasePlanPrice();
+  const usageCharges = calculateUsageCharges(minutes, smsCredits);
+  const totalPrice = calculateTotalPrice(minutes, smsCredits);
 
-  const formatCalls = (value) => value.toLocaleString();
-  const formatTexts = (value) => value.toLocaleString();
+  const formatNumber = (value) => value.toLocaleString();
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-gray-50">
       <Navbar />
       
       <main className="pt-24 pb-16">
         {/* Hero Section */}
         <div className="max-w-6xl mx-auto px-6 text-center mb-16">
-          <h1 className="text-5xl md:text-6xl font-bold text-primary mb-6">
-            Simple, Transparent Pricing
+          <h1 className="text-5xl md:text-6xl font-serif font-normal text-primary mb-4">
+            Pricing
           </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-            Pay only for what you use. Adjust the sliders below to see your custom pricing based on your call and text volume.
+          <p className="text-xl text-gray-600">
+            Pay for what you use
           </p>
         </div>
 
-        {/* Pricing Calculator */}
-        <div className="max-w-4xl mx-auto px-6 mb-16">
-          <div className="bg-white rounded-2xl border-2 border-gray-100 shadow-xl p-8 md:p-12">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-primary mb-4">
-                Calculate Your Monthly Cost
-              </h2>
-              <div className="flex items-center justify-center space-x-4">
-                <div className="text-6xl font-bold text-accent">
-                  {formatPrice(totalPrice)}
-                </div>
-                <div className="text-left">
-                  <div className="text-lg text-gray-600">per month</div>
-                  <div className="text-sm font-medium text-accent bg-accent/10 px-3 py-1 rounded-full inline-block">
-                    {currentTier} Plan
-                  </div>
-                </div>
-              </div>
+
+        {/* Pricing Cards */}
+        <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8 mb-16">
+          {/* Pay as you go Card */}
+          <div className="bg-white rounded-xl border border-gray-200 p-8 shadow-sm">
+            <div className="mb-6">
+              <h3 className="text-3xl font-semibold text-gray-900 mb-2">Pay as you go</h3>
+              <p className="text-gray-600 mb-1">$49 to start.</p>
+              <p className="text-gray-600 mb-1">Self-Serve</p>
+              <p className="text-gray-600">Start instantly.</p>
             </div>
 
-            {/* Sliders */}
-            <div className="grid md:grid-cols-2 gap-8 mb-12">
-              <div className="space-y-6">
-                <PricingSlider
-                  label="Number of Calls"
-                  min={50}
-                  max={5000}
-                  step={25}
-                  value={calls}
-                  onChange={setCalls}
-                  formatValue={formatCalls}
-                  unit="calls"
-                />
-              </div>
-              <div className="space-y-6">
-                <PricingSlider
-                  label="Number of Texts"
-                  min={100}
-                  max={10000}
-                  step={50}
-                  value={texts}
-                  onChange={setTexts}
-                  formatValue={formatTexts}
-                  unit="texts"
-                />
-              </div>
-            </div>
+            <button className="w-full border-2 border-gray-900 text-gray-900 py-3 px-6 rounded-full font-medium hover:bg-gray-50 transition-colors mb-8">
+              Sign up - for free
+            </button>
 
-            {/* Plan Features */}
-            <div className="border-t pt-8">
-              <h3 className="text-xl font-bold text-primary mb-6 text-center">
-                What's included in your {currentTier} plan:
-              </h3>
-              <div className="grid md:grid-cols-2 gap-4">
-                {tierFeatures.map((feature, index) => (
-                  <div key={index} className="flex items-center space-x-3">
-                    <svg className="w-5 h-5 text-accent flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                    <span className="text-gray-700">{feature}</span>
+            <div className="mb-8">
+              <h4 className="text-sm font-medium text-gray-500 uppercase tracking-wider mb-4">DETAILS</h4>
+              <div className="space-y-3">
+                {getPayAsYouGoDetails().map((detail, index) => (
+                  <div key={index} className="flex items-start text-sm text-gray-700">
+                    <div className="w-5 h-5 rounded-full bg-gray-100 flex-shrink-0 mr-3 mt-0.5 flex items-center justify-center">
+                      <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+                    </div>
+                    {detail}
                   </div>
                 ))}
               </div>
             </div>
 
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mt-12">
-              <Button variant="primary" size="lg">
-                Start Free Trial
-              </Button>
-              <Button variant="secondary" size="lg">
-                Contact Sales
-              </Button>
+            <div className="space-y-3">
+              {getPayAsYouGoIncluded().map((feature, index) => (
+                <div key={index} className="flex items-center text-sm text-gray-700">
+                  <svg className="w-4 h-4 text-green-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  {feature}
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Enterprise Plan Card */}
+          <div className="bg-white rounded-xl border border-gray-200 p-8 shadow-sm">
+            <div className="mb-6">
+              <h3 className="text-3xl font-semibold text-gray-900 mb-2">Enterprise Plan</h3>
+              <p className="text-gray-600 mb-1">For companies with large call volumes (over $1k/month)</p>
+            </div>
+
+            <button className="w-full border-2 border-gray-900 text-gray-900 py-3 px-6 rounded-full font-medium hover:bg-gray-50 transition-colors mb-8">
+              Contact Sales
+            </button>
+
+            <div className="mb-8">
+              <h4 className="text-sm font-medium text-gray-500 uppercase tracking-wider mb-4">DETAILS</h4>
+              <div className="space-y-3">
+                <div className="flex items-start text-sm text-gray-700">
+                  <div className="w-5 h-5 rounded-full bg-gray-100 flex-shrink-0 mr-3 mt-0.5 flex items-center justify-center">
+                    <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+                  </div>
+                  Includes everything from pay as you go
+                </div>
+                <div className="flex items-start text-sm text-gray-700">
+                  <div className="w-5 h-5 rounded-full bg-gray-100 flex-shrink-0 mr-3 mt-0.5 flex items-center justify-center">
+                    <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+                  </div>
+                  Discounted pricing based on volumes
+                </div>
+              </div>
+            </div>
+
+            <div className="space-y-3">
+              {getEnterpriseFeatures().map((feature, index) => (
+                <div key={index} className="flex items-center text-sm text-gray-700">
+                  <svg className="w-4 h-4 text-green-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  {feature}
+                </div>
+              ))}
             </div>
           </div>
         </div>
 
-        {/* Pricing Details */}
+        {/* Usage Calculator Section */}
         <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-primary mb-4">
-              Pricing Breakdown
-            </h2>
-            <p className="text-lg text-gray-600">
-              Transparent pricing with no hidden fees
-            </p>
-          </div>
+          <div className="bg-white rounded-xl border border-gray-200 p-8 shadow-sm">
+            <div className="text-center mb-8">
+              <h2 className="text-2xl font-serif font-semibold text-gray-900 mb-4">Calculate Your Usage Cost</h2>
+              <p className="text-gray-600">Adjust the sliders to see how much your usage would cost with our pay-as-you-go pricing</p>
+            </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center p-6 rounded-xl border border-gray-200">
-              <div className="text-4xl font-bold text-primary mb-2">$29</div>
-              <div className="text-gray-600 mb-4">Base Monthly Fee</div>
-              <p className="text-sm text-gray-500">
-                Includes platform access, basic features, and up to 50 calls + 100 texts
-              </p>
+            <div className="space-y-8 mb-8">
+              <PricingSlider
+                question="How many call minutes do you need?"
+                label="Call minutes"
+                min={50}
+                max={10000}
+                step={50}
+                value={minutes}
+                onChange={setMinutes}
+                formatValue={formatNumber}
+              />
+              
+              <PricingSlider
+                question="How many SMS credits would you like per month?"
+                label="SMS/MMS credits"
+                min={0}
+                max={5000}
+                step={25}
+                value={smsCredits}
+                onChange={setSmsCredits}
+                formatValue={formatNumber}
+              />
             </div>
-            
-            <div className="text-center p-6 rounded-xl border border-gray-200">
-              <div className="text-4xl font-bold text-accent mb-2">$0.15</div>
-              <div className="text-gray-600 mb-4">Per Call</div>
-              <p className="text-sm text-gray-500">
-                Each additional call beyond your base allowance
-              </p>
-            </div>
-            
-            <div className="text-center p-6 rounded-xl border border-gray-200">
-              <div className="text-4xl font-bold text-accent mb-2">$0.05</div>
-              <div className="text-gray-600 mb-4">Per Text</div>
-              <p className="text-sm text-gray-500">
-                Each additional text message beyond your base allowance
-              </p>
-            </div>
-          </div>
-        </div>
 
-        {/* FAQ Section */}
-        <div className="max-w-4xl mx-auto px-6 mt-24">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-primary mb-4">
-              Frequently Asked Questions
-            </h2>
-          </div>
-          
-          <div className="space-y-8">
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-lg font-semibold text-primary mb-3">
-                Can I change my plan at any time?
-              </h3>
-              <p className="text-gray-600">
-                Yes, you can upgrade or downgrade your plan at any time. Changes take effect immediately and you'll only pay for what you use.
-              </p>
-            </div>
-            
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-lg font-semibold text-primary mb-3">
-                What happens if I exceed my usage?
-              </h3>
-              <p className="text-gray-600">
-                You'll automatically be charged for additional usage at our standard rates: $0.15 per call and $0.05 per text.
-              </p>
-            </div>
-            
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-lg font-semibold text-primary mb-3">
-                Is there a free trial?
-              </h3>
-              <p className="text-gray-600">
-                Yes, we offer a 14-day free trial with 100 calls and 200 texts included. No credit card required to start.
-              </p>
+            <div className="bg-gray-50 rounded-lg p-6">
+              <div className="grid md:grid-cols-4 gap-6 text-center">
+                <div>
+                  <div className="text-2xl font-semibold text-gray-900">$49.00</div>
+                  <div className="text-sm text-gray-600">Base plan</div>
+                  <div className="text-xs text-gray-500">200 min + 500 SMS included</div>
+                </div>
+                <div>
+                  <div className="text-2xl font-semibold text-gray-900">${usageCharges.callCharges.toFixed(2)}</div>
+                  <div className="text-sm text-gray-600">Extra call charges</div>
+                  <div className="text-xs text-gray-500">{formatNumber(usageCharges.excessMinutes)} min × $0.10</div>
+                </div>
+                <div>
+                  <div className="text-2xl font-semibold text-gray-900">${usageCharges.smsCharges.toFixed(2)}</div>
+                  <div className="text-sm text-gray-600">Extra SMS charges</div>
+                  <div className="text-xs text-gray-500">{formatNumber(usageCharges.excessSMS)} credits × $0.005</div>
+                </div>
+                <div>
+                  <div className="text-3xl font-semibold text-gray-900">${totalPrice.toFixed(2)}</div>
+                  <div className="text-sm text-gray-600">Total monthly cost</div>
+                  <div className="text-xs text-gray-500">Base + overages</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
