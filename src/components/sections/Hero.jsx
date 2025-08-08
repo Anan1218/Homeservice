@@ -2,7 +2,7 @@ import Button from '../common/Button';
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[400px] lg:min-h-[500px] flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-50/50 via-white to-blue-50/20">
+    <section className="relative min-h-[600px] lg:min-h-[700px] flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-50/50 via-white to-blue-50/20">
       {/* Gradient Overlay */}
       <div className="absolute inset-0 bg-gradient-to-tr from-blue-100/20 via-transparent to-purple-100/20" />
       
@@ -21,12 +21,12 @@ export default function Hero() {
       
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 text-center">
-        <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-normal mb-4 max-w-6xl mx-auto leading-tight">
-          Transform Your Commercial and Home Services Business with AI
+        <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-normal mb-4 max-w-4xl mx-auto leading-tight">
+          Answer every call like it’s your best customer.
         </h1>
         
         <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-          Crewmate's AI agents handle customer calls, schedule appointments, and manage service requests for HVAC, plumbing, roofing, and more.
+          Crewmate's AI representatives handle every customer interaction 24/7 — answering calls, booking appointments, and converting leads into sales for your business.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">

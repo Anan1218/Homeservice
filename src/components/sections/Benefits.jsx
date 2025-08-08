@@ -2,12 +2,12 @@ import { HiCheck } from 'react-icons/hi';
 
 export default function Benefits() {
   const benefits = [
-    'True end-to-end automation for field services',
+    'True end-to-end customer service automation',
     'Natural conversations that understand urgency',
     'Multi-channel support (calls, texts, web)',
     'Instant response for emergencies',
     'Easy setup with existing tools',
-    'Built specifically for commercial and home services'
+    'Built specifically for growing businesses'
   ];
 
   return (

@@ -100,7 +100,7 @@ function Contact() {
                 Get in Touch
               </h1>
               <p className="text-xl text-gray-600 mb-12">
-                Ready to transform your commercial and home services business with AI automation? Let's discuss how Crewmate can help.
+                Ready to transform your business with AI automation? Let's discuss how Crewmate can help.
               </p>
               
               <form onSubmit={handleSubmit} className="space-y-6">
@@ -139,7 +139,7 @@ function Contact() {
                     className={`w-full px-4 py-3 border rounded-md focus:ring-2 focus:ring-black focus:border-black transition-colors ${
                       errors.email ? 'border-red-500' : 'border-gray-300'
                     }`}
-                    placeholder="john@hvaccompany.com"
+                    placeholder="john@company.com"
                   />
                   {errors.email && (
                     <p className="mt-1 text-sm text-red-500">{errors.email}</p>
@@ -160,7 +160,7 @@ function Contact() {
                     className={`w-full px-4 py-3 border rounded-md focus:ring-2 focus:ring-black focus:border-black transition-colors ${
                       errors.company ? 'border-red-500' : 'border-gray-300'
                     }`}
-                    placeholder="Premier HVAC Services"
+                    placeholder="Your Company Name"
                   />
                   {errors.company && (
                     <p className="mt-1 text-sm text-red-500">{errors.company}</p>
@@ -181,7 +181,7 @@ function Contact() {
                     className={`w-full px-4 py-3 border rounded-md focus:ring-2 focus:ring-black focus:border-black transition-colors resize-none ${
                       errors.message ? 'border-red-500' : 'border-gray-300'
                     }`}
-                    placeholder="Tell us about your commercial and home service business needs..."
+                    placeholder="Tell us about your business needs and how we can help..."
                   />
                   {errors.message && (
                     <p className="mt-1 text-sm text-red-500">{errors.message}</p>
@@ -273,7 +273,7 @@ function Contact() {
                   Ready to see Crewmate in action?
                 </h3>
                 <p className="text-gray-300 mb-4">
-                  Schedule a personalized demo to see how our AI can transform your commercial and home service operations.
+                  Schedule a personalized demo to see how our AI can transform your customer service operations.
                 </p>
                 <a
                   href="/contact"

@@ -4,7 +4,7 @@ import Footer from '../components/layout/Footer';
 
 // Section components
 import Hero from '../components/sections/Hero';
-import SocialProof from '../components/sections/SocialProof';
+// import SocialProof from '../components/sections/SocialProof';
 import UseCasesIntro from '../components/sections/UseCasesIntro';
 import UseCases from '../components/sections/UseCases';
 import LiveCalls from '../components/sections/LiveCalls';
@@ -17,7 +17,7 @@ function Home() {
       <Navbar />
       <main>
         <Hero />
-        <SocialProof />
+        {/* <SocialProof /> */}
         <UseCasesIntro />
         <UseCases />
         <LiveCalls />

@@ -5,10 +5,10 @@ export default function FinalCTA() {
     <section className="py-20 bg-black text-white">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-4xl font-serif mb-6">
-          Ready to Automate Your Commercial and Home Services Business?
+          Ready to Automate Your Customer Service?
         </h2>
         <p className="text-xl mb-8 opacity-90">
-          Join hundreds of HVAC, plumbing, and roofing companies already using Crewmate to grow their business.
+          Join hundreds of companies already using Crewmate to grow their business.
         </p>
         <Button href="/contact" variant="white" className="text-lg">
           Book a Demo

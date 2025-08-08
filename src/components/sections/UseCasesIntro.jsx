@@ -22,7 +22,7 @@ export default function UseCasesIntro() {
       label: 'Reminders',
       title: 'Reminders',
       heading: 'Reduce No-Shows',
-      description: 'Send automated reminders for service appointments or maintenance visits to boost show rates and maximize revenue from scheduled services.',
+      description: 'Send automated reminders for appointments or meetings to boost show rates and maximize revenue from scheduled interactions.',
       colors: {
         active: 'bg-blue-50 border-blue-300 text-blue-700',
         hover: 'hover:bg-blue-25 hover:border-blue-200'
@@ -30,10 +30,10 @@ export default function UseCasesIntro() {
     },
     { 
       icon: <HiCalendarDays className="w-4 h-4" />, 
-      label: 'Service Appointments',
-      title: 'Service Appointments',
+      label: 'Appointments',
+      title: 'Appointments',
       heading: 'Schedule Appointments 24/7',
-      description: 'Book new service appointments and help customers reschedule or confirm existing ones—without human intervention.',
+      description: 'Book new appointments and help customers reschedule or confirm existing ones—without human intervention.',
       colors: {
         active: 'bg-orange-50 border-orange-300 text-orange-700',
         hover: 'hover:bg-orange-25 hover:border-orange-200'
@@ -44,7 +44,7 @@ export default function UseCasesIntro() {
       label: 'Custom Workflows',
       title: 'Custom Workflows',
       heading: 'Build Your Own',
-      description: 'Create custom automation workflows tailored to your specific commercial and home service business needs, from lead qualification to warranty follow-ups.',
+      description: 'Create custom automation workflows tailored to your specific business needs, from lead qualification to follow-ups.',
       colors: {
         active: 'bg-purple-50 border-purple-300 text-purple-700',
         hover: 'hover:bg-purple-25 hover:border-purple-200'
@@ -59,7 +59,7 @@ export default function UseCasesIntro() {
           <p className="text-sm text-gray-500 uppercase tracking-wide mb-2">Use Cases</p>
           <h2 className="text-4xl lg:text-5xl font-serif mb-6">Automation That Drives Revenue</h2>
           <p className="text-lg text-gray-600 max-w-4xl mx-auto mb-8">
-            Make AI work for you by automating repetitive tasks that your commercial and home service business encounters every single day.
+            Make AI work for you by automating repetitive tasks that your business encounters every single day.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-3 justify-center items-center mb-12">
@@ -111,7 +111,7 @@ export default function UseCasesIntro() {
                   <div className="bg-gray-50 rounded-lg p-3 sm:p-4">
                     <div className="font-medium text-gray-900 text-sm sm:text-base">Sarah Martinez</div>
                     <div className="text-xs sm:text-sm text-gray-600">(555) 123-4567</div>
-                    <div className="text-xs text-gray-500">AC Repair - Returning Customer</div>
+                    <div className="text-xs text-gray-500">Support Request - Returning Customer</div>
                   </div>
                   
                   <div className="space-y-2 sm:space-y-3">
@@ -139,7 +139,7 @@ export default function UseCasesIntro() {
                       <div className="text-xs sm:text-sm font-medium text-blue-700">Mike Chen</div>
                       <div className="text-xs text-blue-600">2:00 PM</div>
                     </div>
-                    <div className="text-xs text-blue-600">HVAC Maintenance</div>
+                    <div className="text-xs text-blue-600">Scheduled Service</div>
                     <div className="flex items-center gap-1 mt-1">
                       <div className="w-1 h-1 sm:w-1.5 sm:h-1.5 bg-blue-400 rounded-full"></div>
                       <div className="text-xs text-blue-600">SMS Sent</div>
@@ -151,7 +151,7 @@ export default function UseCasesIntro() {
                       <div className="text-xs sm:text-sm font-medium text-blue-700">Lisa Park</div>
                       <div className="text-xs text-blue-600">4:30 PM</div>
                     </div>
-                    <div className="text-xs text-blue-600">Plumbing Repair</div>
+                    <div className="text-xs text-blue-600">Repair Appointment</div>
                     <div className="flex items-center gap-1 mt-1">
                       <div className="w-1 h-1 sm:w-1.5 sm:h-1.5 bg-blue-400 rounded-full animate-pulse"></div>
                       <div className="text-xs text-blue-600">Calling...</div>
@@ -174,7 +174,7 @@ export default function UseCasesIntro() {
                   <div className="bg-gray-50 rounded-lg p-2 sm:p-3">
                     <div className="font-medium text-gray-900 text-xs sm:text-sm">James Wilson</div>
                     <div className="text-xs text-gray-600">"Can I reschedule my appointment?"</div>
-                    <div className="text-xs text-gray-500">Water Heater Repair</div>
+                    <div className="text-xs text-gray-500">Repair Request</div>
                   </div>
                   <div className="space-y-2 sm:space-y-3">
                     <div className="bg-orange-25 border border-orange-100 rounded-lg p-2 sm:p-3">

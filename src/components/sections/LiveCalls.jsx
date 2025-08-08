@@ -5,7 +5,7 @@ export default function LiveCalls() {
     {
       id: 1,
       location: 'Corona',
-      service: 'AC Unit Not Cooling',
+      service: 'Product Support Request',
       status: 'unresolved',
       rating: '2/5',
       duration: '1m 28s',
@@ -14,7 +14,7 @@ export default function LiveCalls() {
     {
       id: 2,
       location: 'Anaheim', 
-      service: 'Furnace Installation',
+      service: 'Installation Inquiry',
       status: 'resolved',
       rating: '4/5',
       duration: '2m 54s',
@@ -23,7 +23,7 @@ export default function LiveCalls() {
     {
       id: 3,
       location: 'Arlington Heights',
-      service: 'Clogged Drain Cleaning',
+      service: 'Service Request',
       status: 'unresolved', 
       rating: '4/5',
       duration: '3m 26s',
@@ -32,7 +32,7 @@ export default function LiveCalls() {
     {
       id: 4,
       location: 'Riverside',
-      service: 'HVAC Repair',
+      service: 'Technical Support',
       status: 'resolved',
       rating: '5/5', 
       duration: '4m 12s',
@@ -41,7 +41,7 @@ export default function LiveCalls() {
     {
       id: 5,
       location: 'San Bernardino',
-      service: 'Plumbing Emergency',
+      service: 'Urgent Service Call',
       status: 'resolved',
       rating: '4/5',
       duration: '2m 38s', 
@@ -50,7 +50,7 @@ export default function LiveCalls() {
     {
       id: 6,
       location: 'Irvine',
-      service: 'Electrical Issue',
+      service: 'Technical Issue',
       status: 'unresolved',
       rating: '3/5',
       duration: '1m 45s',
@@ -59,7 +59,7 @@ export default function LiveCalls() {
     {
       id: 7,
       location: 'Long Beach', 
-      service: 'Roof Inspection',
+      service: 'Consultation Request',
       status: 'resolved',
       rating: '5/5',
       duration: '3m 15s',
@@ -68,7 +68,7 @@ export default function LiveCalls() {
     {
       id: 8,
       location: 'Pasadena',
-      service: 'Water Heater Repair', 
+      service: 'Repair Request', 
       status: 'resolved',
       rating: '4/5',
       duration: '2m 22s',

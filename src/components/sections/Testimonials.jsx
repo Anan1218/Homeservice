@@ -4,15 +4,15 @@ import { HiChevronLeft, HiChevronRight } from 'react-icons/hi';
 export default function Testimonials() {
   const testimonials = [
     {
-      quote: "Crewmate handles our after-hours emergencies perfectly. It's like having a dispatcher who never sleeps.",
+      quote: "Crewmate handles our after-hours calls perfectly. It's like having customer service that never sleeps.",
       author: "Mike Thompson",
-      title: "Owner at Thompson's HVAC & Plumbing",
+      title: "CEO at Thompson's Solutions",
       image: "/images/testimonials/mike-thompson.svg"
     },
     {
       quote: "We've reduced missed calls by 90% and our customers love the instant response.",
       author: "Sarah Chen",
-      title: "Operations Manager at Premier Home Services",
+      title: "Operations Manager at Premier Solutions",
       image: "/images/testimonials/sarah-chen.svg"
     }
   ];

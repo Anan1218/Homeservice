@@ -32,7 +32,7 @@ export default function Footer() {
           <div className="col-span-1">
             <h3 className="text-2xl font-bold mb-4">Crewmate</h3>
             <p className="text-gray-600 mb-4">
-              AI automation for commercial and home services businesses
+              AI-powered customer service automation for growing businesses
             </p>
             <div className="flex gap-4">
               {socialLinks.map((social) => (

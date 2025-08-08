@@ -5,17 +5,17 @@ export default function Features() {
     {
       icon: <HiChatBubbleLeftRight className="w-8 h-8" />,
       title: 'Automated Customer Communications',
-      description: 'Handle emergency calls, service requests, and quotes 24/7 with AI that understands commercial and home service urgency.'
+      description: 'Handle customer calls, inquiries, and quotes 24/7 with AI that understands business urgency and customer needs.'
     },
     {
       icon: <HiCalendarDays className="w-8 h-8" />,
       title: 'Smart Scheduling & Dispatch',
-      description: 'Automatically schedule technicians, optimize routes, and manage emergency priorities based on service type.'
+      description: 'Automatically schedule appointments, optimize availability, and manage priority requests based on customer needs.'
     },
     {
       icon: <HiWrenchScrewdriver className="w-8 h-8" />,
-      title: 'Field Service Integration',
-      description: 'Works with ServiceTitan, Housecall Pro, Jobber, and other major field service management platforms.'
+      title: 'Business Software Integration',
+      description: 'Works with CRM systems, scheduling platforms, and other major business management software.'
     }
   ];
 
