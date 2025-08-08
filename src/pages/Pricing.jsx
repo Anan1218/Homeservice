@@ -44,7 +44,7 @@ const Pricing = () => {
           {/* Pay as you go Card */}
           <div className="bg-white rounded-xl border border-gray-200 p-8 shadow-sm">
             <div className="mb-6 h-32">
-              <h3 className="text-3xl font-semibold text-gray-900 mb-2">Pay as you go</h3>
+              <h3 className="text-3xl font-serif text-gray-900 mb-2">Pay as you go</h3>
               <p className="text-gray-600 mb-1">$49 to start.</p>
               <p className="text-gray-600 mb-1">Self-Serve</p>
               <p className="text-gray-600">Start instantly.</p>
@@ -85,7 +85,7 @@ const Pricing = () => {
           {/* Enterprise Plan Card */}
           <div className="bg-white rounded-xl border border-gray-200 p-8 shadow-sm">
             <div className="mb-6 h-32">
-              <h3 className="text-3xl font-semibold text-gray-900 mb-2">Enterprise Plan</h3>
+              <h3 className="text-3xl font-serif text-gray-900 mb-2">Enterprise Plan</h3>
               <p className="text-gray-600 mb-1">For companies with large call volumes (over $1k/month)</p>
             </div>
 
@@ -130,8 +130,8 @@ const Pricing = () => {
         <div className="max-w-6xl mx-auto px-6">
           <div className="bg-white rounded-xl border border-gray-200 p-8 shadow-sm">
             <div className="text-center mb-8">
-              <h2 className="text-2xl font-serif font-semibold text-gray-900 mb-4">Calculate Your Usage Cost</h2>
-              <p className="text-gray-600">Adjust the sliders to see how much your usage would cost with our pay-as-you-go pricing</p>
+              <h2 className="text-3xl font-serif text-gray-900 mb-4">Calculate Your Usage Cost</h2>
+              <p className="text-lg text-gray-600">Adjust the sliders to see how much your usage would cost with our pay-as-you-go pricing</p>
             </div>
 
             <div className="space-y-8 mb-8">
